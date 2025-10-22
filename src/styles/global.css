@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+
+@theme {
+    /* Fondo y tonos neutros */
+    --color-midnight-50: #f5f7fa;
+    --color-midnight-100: #e6ebf3;
+    --color-midnight-200: #c2c9db;
+    --color-midnight-300: #9aa4be;
+    --color-midnight-400: #6c7ca0;
+    --color-midnight-500: #47587f;
+    --color-midnight-600: #344066;
+    --color-midnight-700: #252f4a;
+    --color-midnight-800: #1b2337;
+    --color-midnight-900: #141a27;
+    --color-midnight-950: #0d1117; /* Ideal como color de fondo principal */
+
+    /* Tonos de azul (acentos) */
+    --color-azure-50: #f0f7ff;
+    --color-azure-100: #d6e8ff;
+    --color-azure-200: #b3d4ff;
+    --color-azure-300: #80b8ff;
+    --color-azure-400: #4a97ff;
+    --color-azure-500: #1f78ff;
+    --color-azure-600: #0f63e0;
+    --color-azure-700: #0c4db3;
+    --color-azure-800: #0f3d8a;
+    --color-azure-900: #102f66;
+    --color-azure-950: #0c2044;
+}

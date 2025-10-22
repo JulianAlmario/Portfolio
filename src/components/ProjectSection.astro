@@ -1,0 +1,19 @@
+---
+import {projects} from "../data/projects";
+import ProjectComponent from "../components/ProjectComponent.astro";
+---
+
+    <section>
+    <h2 class="text-midnight-100 text-4xl mb-2">Projects</h2>
+    <div class="grid grid-cols-3 gap-4  p-2">
+        {projects.map((item) => (
+            <ProjectComponent 
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                linkGit={item.linkGit}
+                linkDemo={item.linkDemo}
+            />
+        ))}
+    </div>
+</section>

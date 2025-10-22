@@ -1,0 +1,22 @@
+---
+import type { Project } from "@/types/types.ts";
+import GitHub from "@/assets/brand-github.svg";
+import Link from "@/assets/link.svg";
+import ProjectButton from "./ProjectButton.astro";
+const {title, description,  image, linkGit, linkDemo} = Astro.props as Project;
+---
+
+
+<div class="bg-azure-400 text-midnight-700 rounded-lg w-full">
+    <div class=` bg-cover bg-center h-64 p-2 flex justify-end items- m-1` style={{backgroundImage:`url(${image})`}}>                  
+     <div class="flex gap-3 flex-col">
+    <ProjectButton link={linkGit} icon={GitHub}/>
+    <ProjectButton link={linkDemo} icon={Link}/>
+     </div>
+    </div>
+    <section class="p-4">
+        <h3 class="text-2xl text-center text-white">{title}</h3>
+    <p>{description}</p>
+    </section>
+    
+</div>
