@@ -1,6 +1,6 @@
 import type { Project } from "@/types/types";
-import ticTacToeImage from "@/assets/TicTacToe.jpg";
-import DrivUpImage from "@/assets/DrivUp.png";
+import ticTacToeImage from "../assets/TicTacToe.jpg";
+import DrivUpImage from "../assets/DrivUp.png";
 export const projects: Project[] = [{
     title:"Tic Tac Toe Game",
     description:"A simple Tic Tac Toe game built with React. It features a user-friendly interface and allows two players to compete against each other.",

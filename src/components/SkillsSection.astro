@@ -1,0 +1,17 @@
+---
+import {SkillsCategories} from "../data/skills";
+import SkillsCategory from "./SkillsCategory.astro";
+import Subtitle from "./Subtitle.astro";
+---
+
+<section>
+    <Subtitle text="Skills"/>
+    <div class="flex max-lg:flex-col gap-3 justify-center items-center">
+        {SkillsCategories.map((item) => (
+            <SkillsCategory 
+                category={item.category}
+                skills={item.skills}
+            />
+        ))}
+    </div>
+</section>
