@@ -8,12 +8,12 @@ interface Props{
 const {category, skills} = Astro.props as Props;
 ---
 
-<div class="bg-midnight-700 lg:w-1/4 rounded-lg p-2 flex flex-col items-center gap-3 brightness-100">
+<div class="bg-midnight-700 size-full rounded-lg p-2 flex flex-col items-center gap-3 brightness-100">
     <h3 class="text-3xl text-center mb-2 font-bold">{category}</h3>
     <section class="grid grid-cols-2 gap-4 ">
            {skills.map((skill) => (
         <div class="flex flex-col items-center">
-            <skill.icon class="size-4/6"/>
+            <skill.icon class="size-4/6 max-h-4/6"/>
             <span class="text-lg text-midnight-100">{skill.name}</span>
         </div>
     ))}

@@ -1,0 +1,15 @@
+---
+import type { HeaderProps } from "../types/types.ts";
+const {headerType} = Astro.props as {headerType:HeaderProps};
+---
+<!-- Desktop Navigation -->
+    <nav class="hidden lg:flex justify-center gap-4">
+        {headerType.map((item) => (
+            <a
+                href={item.url}
+                class="text-shadow-lg/20 text-shadow-azure-500 text-xl text-azure-400 hover:text-azure-300 hover:text-2xl transition duration-100 px-3 py-2 rounded-md font-medium"
+            >
+                {item.title}
+            </a>
+        ))}
+    </nav>

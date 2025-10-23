@@ -6,7 +6,7 @@ import Subtitle from "./Subtitle.astro";
 
 <section>
     <Subtitle text="Skills"/>
-    <div class="flex max-lg:flex-col gap-3 justify-center items-center">
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3 justify-center items-center">
         {SkillsCategories.map((item) => (
             <SkillsCategory 
                 category={item.category}

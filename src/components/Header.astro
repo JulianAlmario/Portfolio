@@ -1,4 +1,8 @@
 ---
+import BarNav from "./BarNav.astro";
+import HeaderSideBar from "./HeaderSideBar.astro";
+
+
 const headerType:{title:string, url:string}[] = [
   {
     title: "Home",
@@ -23,15 +27,9 @@ const headerType:{title:string, url:string}[] = [
 ];
 ---
 
-<header class="bg-midnight-900 p-4">
-    <nav class="flex justify-center gap-4">
-        {headerType.map((item) => (
-            <a
-                href={item.url}
-                class="text-shadow-lg/20 text-shadow-azure-500 text-xl text-azure-400 hover:text-azure-300 hover:text-2xl transition duration-100 px-3 py-2 rounded-md font-medium"
-            >
-                {item.title}
-            </a>
-        ))}
-    </nav>
+<header class="lg:bg-midnight-900 p-4 fixed z-10 w-full">
+  <BarNav  headerType={headerType}/>
+  <HeaderSideBar headerType={headerType} />
+   
 </header>
+

@@ -1,5 +1,10 @@
 import type { SvgComponent } from "astro/types";
 
+export type HeaderProps={
+    title:string;
+    url:string;
+}[];
+
 export type Project={
     title: string;
     description: string;

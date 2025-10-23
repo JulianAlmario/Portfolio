@@ -6,7 +6,7 @@ import Subtitle from "./Subtitle.astro";
 
     <section>
     <Subtitle text="Projects"/>
-    <div class="grid grid-cols-3 gap-4  p-2">
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4  p-2">
         {projects.map((item) => (
             <ProjectComponent 
                 title={item.title}
