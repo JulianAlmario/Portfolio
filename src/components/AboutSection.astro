@@ -1,0 +1,38 @@
+---
+import PersonalPhoto from "../assets/Photo.jpeg";
+import CVButton from "./CVButton.astro";
+import Github from "../assets/github.svg";
+import LinkedIn from "../assets/linkedin.svg";
+
+
+const CVEnglish="CV_Julian_Almario.pdf"
+---
+
+<section class="flex max-sm:flex-wrap-reverse max-sm:gap-5 justify-between p-5 lg:p-20">
+  <section class="flex flex-col">
+    <h3 class="text-azure-600 font-bold">Hi I'm Julian Almario</h3>
+    <h1 class="text-4xl text-midnight-100 font-bold mb-5">
+        System and Computer Engineer, Software Developer</h1>
+    <p class="text-midnight-100 max-w-lg mb-10">
+      I'm a passionate software developer with experience in building web
+      applications using modern technologies. I love creating efficient and
+      scalable solutions to solve real-world problems. Welcome to my portfolio!
+    </p>
+    <span class="text-center mb-2">Download CV</span>
+    <div class="flex gap-2 mx-auto mb-10">
+        <CVButton link={CVEnglish} title="English" />
+        <CVButton link={""} title="Spanish" />
+    </div>
+    <div class="flex gap-5 mx-auto ">
+        <a href="https://github.com/JulianAlmario">
+            <Github class="my-auto cursor-pointer size-12 bg-midnight-50 rounded-full"/>
+        </a>
+       <a href="https://www.linkedin.com/in/julian-david-almario-vergara-0b0b63321"> <LinkedIn class="cursor-pointer size-12 bg-midnight-50 rounded-xl"/></a>
+        
+    </div>
+  </section>
+   <section class="self-center">
+      <img class="max-sm:size-4/6 mx-auto rounded-full" 
+      src={PersonalPhoto.src} alt="Personal Photo" />
+    </section>
+</section>

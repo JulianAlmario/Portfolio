@@ -10,8 +10,8 @@ const {title, description,  image, linkGit, linkDemo} = Astro.props as Project;
 <div class="bg-midnight-700 brightness-100 rounded-lg w-full">
     <div class=` bg-cover bg-center h-96 max-[1600px]:h-64 p-2 flex justify-end mx-2 mt-2` style={{backgroundImage:`url(${image})`}}>                  
      <div class="flex gap-3 flex-col">
-    <ProjectButton link={linkGit} icon={GitHub}/>
-    <ProjectButton link={linkDemo} icon={Link}/>
+    <ProjectButton title={"Git Repository"} link={linkGit} icon={GitHub}/>
+    <ProjectButton title={"Link Demo"} link={linkDemo} icon={Link}/>
      </div>
     </div>
     <section class="px-4 pb-4">

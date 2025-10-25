@@ -1,14 +1,15 @@
 ---
 import { SvgComponent } from "astro/types";
 interface buttonProps{
+    title:string;
     link:string;
     icon:SvgComponent;
 }
 
-const {link, icon:Icon} = Astro.props as buttonProps;
+const {title,link, icon:Icon} = Astro.props as buttonProps;
 ---
 
- <button title="Git Repository" 
+ <button title={title} 
       class="bg-midnight-700 p-1 sm-rounded cursor-pointer rounded-md opacity-50 hover:opacity-100 ransition duration-100">
         <a href={link}><Icon class="text-blue-400"/></a>
       </button>
