@@ -1,62 +1,53 @@
 
 import type { Skill, SkillCategory } from "../types/types";
-import astroIcon from "../assets/icons/astro-original.svg";
-import css3Icon from "../assets/icons/css3-original.svg";
-import html5Icon from "../assets/icons/html5-original.svg";
-import javascriptIcon from "../assets/icons/javascript-original.svg";
-import mongodbIcon from "../assets/icons/mongodb-original.svg";
-import nodejsIcon from "../assets/icons/nodejs-icon-svgrepo-com.svg";
-import postgresqlIcon from "../assets/icons/postgresql-original.svg";
-import reactIcon from "../assets/icons/react-original.svg";
-import tailwindcssIcon from "../assets/icons/tailwindcss-original.svg";
-import typescriptIcon from "../assets/icons/typescript-original.svg";
+import { techSkills } from "./tech";
 
 const framework: Skill[] = [
     {
         name: "Astro",
-        icon: astroIcon
+        icon: techSkills["astro"]
     },
     {
         name: "React",
-        icon: reactIcon
+        icon: techSkills["react"]
     },
     {
         name: "Tailwind CSS",
-        icon: tailwindcssIcon
+        icon: techSkills["tailwindcss"]
     }
 ];
 
 const languages: Skill[] = [
     {
         name: "HTML5",
-        icon: html5Icon
+        icon: techSkills["html5"]
     },
     {
         name: "CSS3",
-        icon: css3Icon
+        icon:  techSkills["css3"]
     },
     {
         name: "JavaScript",
-        icon: javascriptIcon
+        icon: techSkills["javascript"]
     },
     {
         name: "TypeScript",
-        icon: typescriptIcon
+        icon:  techSkills["typescript"]
     }
 ];
 
 const backend: Skill[] = [
     {
         name: "Node.js",
-        icon: nodejsIcon
+        icon: techSkills["nodejs"]
     },
     {
         name: "MongoDB",
-        icon: mongodbIcon
+        icon:   techSkills["mongodb"]
     },
     {
         name: "PostgreSQL",
-        icon: postgresqlIcon
+        icon:  techSkills["postgresql"]
     }
 ];
 

@@ -1,7 +1,7 @@
 ---
-import {projects} from "../data/projects";
-import ProjectComponent from "../components/ProjectComponent.astro";
-import Subtitle from "./Subtitle.astro";
+import {projects} from "../../data/Projects";
+import ProjectComponent from "./ProjectComponent.astro";
+import Subtitle from "../Subtitle.astro";
 ---
 
     <section>
@@ -14,6 +14,7 @@ import Subtitle from "./Subtitle.astro";
                 image={item.image}
                 linkGit={item.linkGit}
                 linkDemo={item.linkDemo}
+                tech={item.tech}
             />
         ))}
     </div>

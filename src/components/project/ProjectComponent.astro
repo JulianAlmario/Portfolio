@@ -1,9 +1,9 @@
 ---
-import type { Project } from "../types/types.ts";
+import type { Project } from "../../types/types.ts";
 import GitHub from "@/assets/brand-github.svg";
 import Link from "@/assets/link.svg";
 import ProjectButton from "./ProjectButton.astro";
-const {title, description,  image, linkGit, linkDemo} = Astro.props as Project;
+const {title, description,  image, linkGit, linkDemo,tech} = Astro.props as Project;
 ---
 
 
@@ -17,6 +17,12 @@ const {title, description,  image, linkGit, linkDemo} = Astro.props as Project;
     <section class="px-4 pb-4">
         <h3 class="text-2xl text-center">{title}</h3>
     <p class="text-midnight-100">{description}</p>
+    </section>
+    <section class="flex gap-2 pb-2 px-4 items-center">
+        <span class="mr-2 font-bold">Tech:</span>
+        {tech.map((Item)=>(
+                <Item class="size-1/12"/>
+            ))}
     </section>
     
 </div>

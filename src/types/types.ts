@@ -11,6 +11,7 @@ export type Project={
     image:string;
     linkGit: string;
     linkDemo: string;
+    tech:SvgComponent[];
 }
 
 export type Skill={
