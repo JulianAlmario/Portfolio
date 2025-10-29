@@ -3,6 +3,7 @@ import type { SvgComponent } from "astro/types";
 export type HeaderProps={
     title:string;
     url:string;
+    icon:SvgComponent;
 }[];
 
 export type Project={

@@ -1,28 +1,34 @@
 ---
 import BarNav from "./BarNav.astro";
 import HeaderSideBar from "./HeaderSideBar.astro";
+import type { LucideIcon } from 'lucide-react';
+import {GraduationCap,House,FolderCode,User,Code} from 'lucide-react';
 
 
-const headerType:{title:string, url:string}[] = [
+const headerType:{title:string, url:string,icon:LucideIcon}[] = [
   {
     title: "Home",
     url: "/",
-  },
+    icon:House  },
    {
     title: "About",
     url: "/about",
+    icon:User
   },
   {
     title: "Projects",
     url: "/projects",
+    icon:FolderCode
   },
   {
     title: "Education",
     url: "/education",
+    icon:GraduationCap
   },
   {
     title: "Skills",
     url: "/skills",
+    icon:Code
   },
 ];
 ---

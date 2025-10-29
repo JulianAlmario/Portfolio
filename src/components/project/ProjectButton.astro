@@ -9,7 +9,11 @@ interface buttonProps{
 const {title,link, icon:Icon} = Astro.props as buttonProps;
 ---
 
- <button title={title} 
-      class="bg-midnight-700 p-1 sm-rounded cursor-pointer rounded-md opacity-50 hover:opacity-100 ransition duration-100">
+{link !==""? (
+   <button title={title} 
+      class="bg-midnight-700 p-1 sm-rounded cursor-pointer rounded-md opacity-50 hover:opacity-100 transition duration-100">
         <a href={link}><Icon class="text-blue-400"/></a>
       </button>
+):(
+  null
+)}
